@@ -14,11 +14,11 @@ import java.util.Map;
 
 public class Challenge {
 
-    private List<Map<Integer, Integer>> orders;
-    private List<Map<Integer, Integer>> aisles;
-    private int nItems;
-    private int waveSizeLB;
-    private int waveSizeUB;
+    private List<Map<Integer, Integer>> orders; // Cada pedido: item -> quantidade.
+    private List<Map<Integer, Integer>> aisles; // Cada corredor: item -> quantidade.
+    private int nItems;                         // Total de itens.
+    private int waveSizeLB;                     // Limite inferior da wave.
+    private int waveSizeUB;                     // Limite superior da wave.
 
     public void readInput(String inputFilePath) {
         try {

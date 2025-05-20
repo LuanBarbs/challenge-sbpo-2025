@@ -8,6 +8,10 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+// Importações das soluções.
+import org.sbpo2025.challenge.solvers.BasicSolver;
+import org.sbpo2025.challenge.solvers.GreedySolver;
+
 public class ChallengeSolver {
     private final long MAX_RUNTIME = 600000; // milliseconds; 10 minutes
 
@@ -27,8 +31,9 @@ public class ChallengeSolver {
     }
 
     public ChallengeSolution solve(StopWatch stopWatch) {
-        // Implement your solution here
-        return null;
+        // return BasicSolver.generate(orders, aisles, nItems, waveSizeLB, waveSizeUB, stopWatch);
+
+        return GreedySolver.generate(orders, aisles, nItems, waveSizeLB, waveSizeUB, stopWatch);
     }
 
     /*
